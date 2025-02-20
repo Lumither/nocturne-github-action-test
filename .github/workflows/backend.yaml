@@ -24,4 +24,4 @@ jobs:
     
           - name: build container
             run: |
-              docker build -t nocturne-backend -f ./backend/production.containerfile .
+                make release
