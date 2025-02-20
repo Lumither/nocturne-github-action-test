@@ -21,4 +21,4 @@ jobs:
     
           - name: build container
             run: |
-              docker build -t nocturne-backend -f ./backend/backend.containerfile .
+              docker build -t nocturne-backend -f ./backend/production.containerfile .

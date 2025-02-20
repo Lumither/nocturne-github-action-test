@@ -1,6 +1,6 @@
 FROM rust:latest AS builder
 WORKDIR /app
-COPY . .
+COPY ./backend .
 RUN ["cargo", "build", "-r"]
 
 FROM gcr.io/distroless/cc AS production
