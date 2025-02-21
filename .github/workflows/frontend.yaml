@@ -1,4 +1,4 @@
-name: Nocturne Backend
+name: Nocturne Frontend
 on:
   push:
     branches: ["master"]
@@ -9,7 +9,7 @@ jobs:
       packages: write
     defaults:
       run:
-        working-directory: ./backend
+        working-directory: ./frontend
     steps:
       - name: checkout
         uses: actions/checkout@v2
