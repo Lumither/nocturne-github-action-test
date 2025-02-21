@@ -5,7 +5,7 @@ endif
 
 GIT_HASH := $(shell git rev-parse --short HEAD)
 
-IMAGE_NAME := ghcr.io/lumither/nocturne-github-action-test-backend
+IMAGE_NAME := ghcr.io/lumither/nocturne-github-action-test-frontend
 
 all: release
 
