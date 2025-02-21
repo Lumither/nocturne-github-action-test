@@ -5,7 +5,7 @@ endif
 
 GIT_HASH := $(shell git rev-parse --short HEAD)
 
-IMAGE_NAME := lumither/nocturne-backend
+IMAGE_NAME := ghcr.io/lumither/nocturne-backend
 
 all: release
 
@@ -18,6 +18,6 @@ tag:
 	docker tag $(IMAGE_NAME) $(IMAGE_NAME):$(GIT_HASH)-$(ARCH)
 
 push:
-	docker push ghcr.io/$(IMAGE_NAME):$(GIT_HASH)-$(ARCH)
+	docker push $(IMAGE_NAME):$(GIT_HASH)-$(ARCH)
 
 .PHONY: all release tag push
