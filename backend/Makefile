@@ -18,6 +18,6 @@ tag:
 	docker tag $(IMAGE_NAME) $(IMAGE_NAME):$(GIT_HASH)-$(ARCH)
 
 push:
-	docker push $(IMAGE_NAME):$(GIT_HASH)-$(ARCH)
+	docker push ghcr.io/$(IMAGE_NAME):$(GIT_HASH)-$(ARCH)
 
 .PHONY: all release tag push
